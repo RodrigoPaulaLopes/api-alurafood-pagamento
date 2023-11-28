@@ -33,7 +33,7 @@ public class PagamentoService {
         return new PagamentoDto(pagamento);
     }
 
-    public void excluir(Long id){
+    public void delete(Long id){
 
         var pagamento  = repository.getReferenceById(id);
         repository.delete(pagamento);
